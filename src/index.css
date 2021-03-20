@@ -1,8 +1,13 @@
-html,body,#root {
+html,
+body,
+#root {
+  height: 100vh;
+  width: 100vw;
   margin: 0;
   padding: 0;
-  background-color: #1d1d1d;
+  background: #1d1d1d;
 }
+
 
 .name_container {
   position: fixed;
@@ -25,6 +30,8 @@ html,body,#root {
 }
 
 
+
+
 .job_title {
   position: relative;
   height: 30rem;  /* Create media query for mobile */
@@ -45,6 +52,7 @@ html,body,#root {
     cursor: pointer;
     opacity: 0;
     text-transform: uppercase;
+    text-decoration: none;
 }
 
 .enter_btn:hover {
