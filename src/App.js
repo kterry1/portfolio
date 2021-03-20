@@ -4,12 +4,12 @@ import Projects from './components/Projects';
 import {Switch, Route} from 'react-router-dom';
 import { PageTransition } from "@steveeeie/react-page-transition";
 import {BrowserRouter as Router} from 'react-router-dom';
+import Main from './components/Main';
 
 function App() {
   return (
     <>
     <Router>
-
    <Route  render={({ location }) => {
      console.log(location)
      return (
@@ -21,7 +21,7 @@ function App() {
     >
        <Switch location={location}> 
        <Route exact path="/" component={Home}/>
-       <Route exact path="/projects" component={Projects}/> 
+       <Route exact path="/portfolio" component={Main}/> 
       </Switch> 
      </PageTransition> 
   )

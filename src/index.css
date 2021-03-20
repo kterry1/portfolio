@@ -8,6 +8,8 @@ body,
   background: #1d1d1d;
 }
 
+/* Fonts */
+/* font-family: 'Work Sans', sans-serif; */
 
 .name_container {
   position: fixed;
@@ -53,10 +55,11 @@ body,
     opacity: 0;
     text-transform: uppercase;
     text-decoration: none;
-}
+} 
 
 .enter_btn:hover {
   box-shadow: 0px 0px 5px rgba(8, 253, 216, 1);
+  color: #5f5f5f;
 }
 
 .enter_btn {
@@ -68,3 +71,85 @@ body,
   50% { opacity:.5; } 
   100% { opacity:1; } 
  }
+
+
+.sidebar_container {
+  position: absolute;
+  grid-area: sidebar;
+  width: 250px;
+  height: 100vh;
+}
+
+
+.sidebar_container {
+  display: flex;
+
+  flex-direction: column;
+  padding: 5rem 0rem;
+  height: 100vh;
+  width: 15%;
+  background-color: #242424 !important;
+  align-items: center;
+  font-family: 'Antic Slab';
+  font-size: 1.2rem;
+  box-shadow: inset 0 -2px 8px rgb(0 0 0 / 44%);
+}
+
+.sidebar_container > a {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 300;
+  font-size: 10rem;
+  color: rgb(8, 253, 216);
+  border-bottom: 1px solid #5f5f5f;
+  border-top: 1px solid #5f5f5f;
+  border-radius: 40px;
+}
+
+.sidebar_container h3 {
+  color: #5f5f5f !important;
+}
+
+.sidebar_container .sidebar_links {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  top: 10px;
+  cursor: pointer;
+  width: 100%;
+  color: #5f5f5f;
+}
+
+.sidebar_container .sidebar_links a {
+  text-align: center;
+  padding: 1rem 0;
+  border-bottom: 1px solid #5f5f5f;
+  cursor: pointer;
+}
+
+.sidebar_container .sidebar_links a:hover {
+  color:rgba(255, 255, 255, .6);
+}
+
+
+.projects_container {
+  background-color: #242424;
+  grid-area: project;
+
+}
+
+.main_container {
+  display: grid;
+  grid-template-columns: 15% 1fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  height: 100vh;
+  width: 100vw;
+  grid-template-areas: "sidebar project";
+}
+
+.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}
+
+@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}
+
+@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}
