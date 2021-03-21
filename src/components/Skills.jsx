@@ -5,14 +5,15 @@ const Skills = () => {
     return (
         <div className="skills_container">
          <Work/>
-         <div className="work_react">React</div>
-         <div className="work_redux">Redux</div>
-         <div className="work_ts">TypeScript</div>
-         <div className="work_js">JavaScript</div>
-         <div className="work_node">Node</div>
-         <div className="work_stcmp">StyledComponents</div>
-         <div className="work_scss">SCSS</div>
-         <div className="work_git">Git</div>
+         <div className="work react">{"<React />"}</div>
+         <div className="work redux">{"<Redux/>"}</div>
+         <div className="work ts">{"<TypeScript/>"}</div>
+         <div className="work js">{"<JavaScript/>"}</div>
+         <div className="work node">{"<Node/>"}</div>
+         <div className="work jest">{"<Jest/>"}</div>
+         <div className="work sass">{"<Sass/>"}</div>
+         <div className="work git">{"<Git/>"}</div>
+         <div className="work react_router">{"<ReactRouter/>"}</div>
         </div>
     )
 }
