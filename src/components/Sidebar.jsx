@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 
 const Sidebar = () => {
     return (
@@ -6,10 +7,9 @@ const Sidebar = () => {
             <a>KT</a>
             <h3>Front End Developer</h3>
             <div className="sidebar_links">
-                <a>Home</a>
-                <a>Projects</a>
-                <a>Skills & Work</a>
-                {/* <a> Resume</a> */}
+                <Link to="/portfolio">Home</Link>
+                <Link to='/portfolio/projects'>Projects</Link>
+                <Link to="/portfolio/skills">Skills & Work</Link>
             </div>
         </nav>
     )
