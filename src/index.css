@@ -139,10 +139,16 @@ body,
 
 
 .projects_container {
-  background-color: blue;
   height: 100%;
   width: 100%;
   grid-area: project;
+}
+
+.projects {
+  display: flex;
+  justify-content: space-around;
+  align-items:center;
+  height: 100%;
 }
 
 .skills_container {
@@ -197,10 +203,12 @@ body,
 
 .ant-timeline-item-content {
   color: rgba(255, 255, 255, .9);
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: .5px;
 }
 
 .ant-timeline-item-content:hover {
-  color: #08fdd8;
+  color:  rgba(255, 34, 83, .7);
   cursor:default;
 }
 
@@ -209,7 +217,6 @@ body,
   font-family: 'Source Code Pro', monospace;
   font-style: italic;
   font-size: 4rem;
-  /* color: #ff2253; */
 }
 
 .react {

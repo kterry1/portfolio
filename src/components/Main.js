@@ -24,8 +24,8 @@ return (
         return (
           <PageTransition
             preset="fade"
-            exitAnimation="flipOutLeft"
-            enterAnimation="moveFromLeftFade"
+            exitAnimation="rotateCarouselLeftOut"
+            enterAnimation="rotateCarouselTopIn"
             transitionKey={location.pathname}
           >
             <Switch location={location}>
