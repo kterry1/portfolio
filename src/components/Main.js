@@ -6,14 +6,9 @@ import { Switch, Route } from "react-router-dom";
 import { PageTransition } from "@steveeeie/react-page-transition";
 import { BrowserRouter as Router } from "react-router-dom";
 import Skills from './Skills.jsx';
+import PortHome from './PortHome';
+import Home from './Home';
 const Main = () => {
-    // return (
-    //     <div className="main_container">
-    //     <GitHubLink/>
-    //     <SideBar/>
-    //     <Projects/>
-    //     </div>
-    // )
 return (
     <div className="main_container">
     <Router>
@@ -29,6 +24,7 @@ return (
             transitionKey={location.pathname}
           >
             <Switch location={location}>
+              <Route exact path="/portfolio" component={PortHome} />
               <Route exact path="/portfolio/projects" component={Projects} />
               <Route exact path="/portfolio/skills" component={Skills} />
             </Switch>

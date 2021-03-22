@@ -22,17 +22,13 @@ const Projects = () => {
       </div>
       <div className="projects">
         <Card
-          style={{
-            width: 300,
-            border: "1px solid #5f5f5f",
-            backgroundColor: "#242424",
-          }}
+          className="cards"
           cover={
             <img
               style={{
                 minHeight: "200px",
                 backgroundColor: "#1d1d1d",
-                border: "1px solid #5f5f5f",
+                border: "1px solid #242424",
               }}
               // alt="example"
               src={
@@ -64,17 +60,13 @@ const Projects = () => {
           />
         </Card>
         <Card
-          style={{
-            width: 300,
-            border: "1px solid #5f5f5f",
-            backgroundColor: "#242424",
-          }}
+        className="cards"
           cover={
             <img
               style={{
                 minHeight: "200px",
                 backgroundColor: "#1d1d1d",
-                border: "1px solid #5f5f5f",
+                border: "1px solid #242424",
               }}
               // alt="example"
               src={
@@ -106,17 +98,13 @@ const Projects = () => {
           />
         </Card>
         <Card
-          style={{
-            width: 300,
-            border: "1px solid #5f5f5f",
-            backgroundColor: "#242424",
-          }}
+          className="cards"
           cover={
             <img
               style={{
                 minHeight: "200px",
                 backgroundColor: "#1d1d1d",
-                border: "1px solid #5f5f5f",
+                border: "1px solid #242424",
               }}
               // alt="example"
               src={

@@ -83,6 +83,7 @@ body,
 }
 
 
+
 .sidebar_container {
   display: flex;
 
@@ -97,7 +98,7 @@ body,
   box-shadow: inset 0 -2px 8px rgb(0 0 0 / 44%);
 }
 
-.sidebar_container > a {
+.sidebar_container > .initials {
   font-family: 'Work Sans', sans-serif;
   font-weight: 300;
   font-size: 10rem;
@@ -105,6 +106,7 @@ body,
   border-bottom: 1px solid #5f5f5f;
   border-top: 1px solid #5f5f5f;
   border-radius: 40px;
+  cursor: default;
 }
 
 .sidebar_container h3 {
@@ -150,6 +152,7 @@ body,
   align-items:center;
   height: 100%;
 }
+
 
 .skills_container {
   background-color: #1d1d1d;
@@ -313,15 +316,15 @@ text-transform: uppercase;
   }
   
   .ball {
-      animation: moveX 4s linear 0s infinite alternate, moveY 5s linear 0s infinite alternate;
+      animation: moveX 6s linear 0s infinite alternate, moveY 6s linear 0s infinite alternate;
   }
   
   .ball_two {
-      animation: moveX_two 5s linear 0s infinite alternate, moveY_two 4s linear 0s infinite alternate;
+      animation: moveX_two 6s linear 0s infinite alternate, moveY_two 5s linear 0s infinite alternate;
   }
   
   .ball_three {
-      animation: moveX_three 6s linear 0s infinite alternate, moveY_three 5s linear 0s infinite alternate;
+      animation: moveX_three 6s linear 0s infinite alternate, moveY_three 7s linear 0s infinite alternate;
   }
   
   @keyframes moveX {
@@ -346,4 +349,93 @@ text-transform: uppercase;
   
   @keyframes moveY_three {
     from { top: 100vh; } to { top: 0; }
+  }
+
+  .porthome_container {
+    height: 100%;
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .porthome_container h1, .porthome_container p {
+    position: relative;
+    color: rgba(255, 255, 255, 0.9);
+    top: 25vh;
+  }
+
+ .fa-linkedin {
+    position: relative;
+    top: 25vh;
+    font-size: 3rem;
+    color:#0a66c2;
+    cursor: pointer;
+  }
+
+  .fa-linkedin:hover {
+    color:#0a66c28c;
+  }
+
+  .heading {
+    font-size: 6rem;
+    letter-spacing: 6px;
+  }
+  .heading--stroke {
+      width: 2px;
+      color: #0d1b1e;
+      color: transparent;
+  }
+  .heading--shadow {
+      text-shadow: 6px 6px #ff2253;
+    }
+  
+  .heading--stroke-shadow {
+      color: #f2cee6;
+      text-shadow: -2px 0 #0d1b1e, 0 -2px #0d1b1e, 2px 0 #0d1b1e, 0 2px #0d1b1e,
+        2px 2px #0d1b1e, -2px -2px #0d1b1e, -2px 2px #0d1b1e, 2px -2px #0d1b1e,
+        6px 6px #ff2253;
+  }
+  
+
+  .porthome_container p {
+    width: 50vw;
+    font-size: 2.07rem;
+    font-family: 'Source Code Pro', sans-serif;
+  }
+
+
+  .cards {
+    width: 300px !important;
+    border: 1px solid #242424 !important;
+    background: linear-gradient(
+      85deg
+      ,#434343,#262626) !important;
+    cursor: pointer !important;
+  } 
+
+  .circle {
+    pointer-events: none;
+    position: absolute;
+    top: 13vh;
+    background-color: #1d1d1d;
+  }
+
+  .fa-location-arrow {
+    color: #08fdd8;
+    font-size: 4rem;
+    animation: bobble 3s infinite;
+    animation-delay: 3s;
+  }
+
+
+  
+  @keyframes bobble {
+    0% {
+      transform: translateY(10px) rotate(137deg);
+    }
+    50% {
+      transform: translateY(40px) rotate(137deg);
+    }
+    100% {
+      transform: translateY(10px) rotate(137deg);
+    }
   }
