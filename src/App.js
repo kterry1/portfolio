@@ -18,8 +18,8 @@ function App() {
                 transitionKey={location.pathname}
               >
                 <Switch location={location}>
-                  <Route exact path="/" component={Home} />
-                  <Route path="/portfolio" component={Main} />
+                  <Route exact path="/portfolio" component={Home} />
+                  <Route path="/main" component={Main} />
                 </Switch>
               </PageTransition>
             );
