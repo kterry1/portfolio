@@ -59,7 +59,7 @@ const Projects = () => {
             title="Personal Porfolio"
             description="Application to showcase my skills and projects. Built with anime.js and particles.js."
           />
-            <a target="_blank" href="https://github.com/kterry1/portfolio"><i class="fas fa-desktop"></i></a>
+            <a target="_blank" href="https://kterry1.github.io/portfolio/"><i class="fas fa-desktop"></i></a>
         </Card>
         <Card
           className="cards"
