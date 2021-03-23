@@ -24,9 +24,9 @@ return (
             transitionKey={location.pathname}
           >
             <Switch location={location}>
-              <Route exact path="/main" component={PortHome} />
-              <Route exact path="/main/projects" component={Projects} />
-              <Route exact path="/main/skills" component={Skills} />
+              <Route exact path="/portfolio/main" component={PortHome} />
+              <Route exact path="/portfolio/main/projects" component={Projects} />
+              <Route exact path="/portfolio/main/skills" component={Skills} />
             </Switch>
           </PageTransition>
         );

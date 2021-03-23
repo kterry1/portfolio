@@ -19,7 +19,7 @@ function App() {
               >
                 <Switch location={location}>
                   <Route exact path="/portfolio" component={Home} />
-                  <Route path="/main" component={Main} />
+                  <Route path="/portfolio/main" component={Main} />
                 </Switch>
               </PageTransition>
             );
