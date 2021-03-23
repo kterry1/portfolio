@@ -1,19 +1,17 @@
 import React from "react";
 import { Card, Avatar } from "antd";
-import {
-  EditOutlined,
-  EllipsisOutlined,
-  SettingOutlined,
-} from "@ant-design/icons";
-import tsImg from "../images/tsImg.jpg";
 import reactImg from "../images/reactImg.webp";
-import reduxImg from "../images/reduxImg.jpg";
+import portfolioImg from '../images/portfolioImg.png';
+import coffeeImg from '../images/coffeeImg.png';
+import newsGridImg from '../images/newsGridImg.png';
+import basicsImg from '../images/basicsImg.png';
+
 const Projects = () => {
   const { Meta } = Card;
   return (
     <div className="projects_container">
-      <h1>Hover over a card to see more</h1>
-      <h3>Click on a project to see the site</h3>
+      <h1>Hover over a card to zoom in</h1>
+      <h3>Click on the Desktop icon to go to the site</h3>
 
       <div class="box">
         <div class="ball"></div>
@@ -21,44 +19,6 @@ const Projects = () => {
         <div class="ball_three"></div>
       </div>
       <div className="projects">
-        <Card
-          className="cards"
-          cover={
-            <img
-              style={{
-                minHeight: "200px",
-                backgroundColor: "#1d1d1d",
-                border: "1px solid #242424",
-              }}
-              // alt="example"
-              src={
-                "https://images.unsplash.com/photo-1530435460869-d13625c69bbf?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"
-              }
-            />
-          }
-        >
-          <Meta
-            avatar={<Avatar src={tsImg} />}
-            title="Drag and Drop"
-            description="TypeScript application that allows a user to drag and drop items on a Kibana Board."
-          />
-          <Meta
-            avatar={
-              <Avatar
-                src={reactImg}
-                style={{ position: "relative", bottom: "50px" }}
-              />
-            }
-          />
-          <Meta
-            avatar={
-              <Avatar
-                src={reduxImg}
-                style={{ position: "relative", bottom: "30px", right: "48px" }}
-              />
-            }
-          />
-        </Card>
         <Card
         className="cards"
           cover={
@@ -69,33 +29,16 @@ const Projects = () => {
                 border: "1px solid #242424",
               }}
               // alt="example"
-              src={
-                "https://images.unsplash.com/photo-1530435460869-d13625c69bbf?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"
-              }
+              src={coffeeImg}
             />
           }
         >
           <Meta
-            avatar={<Avatar src={tsImg} />}
-            title="Drag and Drop"
-            description="TypeScript application that allows a user to drag and drop items on a Kibana Board."
+            avatar={<Avatar src={reactImg} />}
+            title="Coffee Cafe"
+            description="Online Coffee Shop where logged in users and order from a variety of menu items."
           />
-          <Meta
-            avatar={
-              <Avatar
-                src={reactImg}
-                style={{ position: "relative", bottom: "50px" }}
-              />
-            }
-          />
-          <Meta
-            avatar={
-              <Avatar
-                src={reduxImg}
-                style={{ position: "relative", bottom: "30px", right: "48px" }}
-              />
-            }
-          />
+           <a target="_blank" href="https://fir-react-auth-dacbf.firebaseapp.com/login"><i class="fas fa-desktop"></i></a>
         </Card>
         <Card
           className="cards"
@@ -107,33 +50,37 @@ const Projects = () => {
                 border: "1px solid #242424",
               }}
               // alt="example"
-              src={
-                "https://images.unsplash.com/photo-1530435460869-d13625c69bbf?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"
-              }
+              src={portfolioImg}
             />
           }
         >
           <Meta
-            avatar={<Avatar src={tsImg} />}
-            title="Drag and Drop"
-            description="TypeScript application that allows a user to drag and drop items on a Kibana Board."
+            avatar={<Avatar src={reactImg} />}
+            title="Personal Porfolio"
+            description="Application to showcase my skills and projects. Built with anime.js and particles.js."
           />
+            <a target="_blank" href="https://github.com/kterry1/portfolio"><i class="fas fa-desktop"></i></a>
+        </Card>
+        <Card
+          className="cards"
+          cover={
+            <img
+              style={{
+                minHeight: "200px",
+                backgroundColor: "#1d1d1d",
+                border: "1px solid #242424",
+              }}
+              // alt="example"
+              src={newsGridImg}
+            />
+          }
+        >
           <Meta
-            avatar={
-              <Avatar
-                src={reactImg}
-                style={{ position: "relative", bottom: "50px" }}
-              />
-            }
+            avatar={<Avatar style={{backgroundColor: "white"}} src={basicsImg} />}
+            title="News Grid"
+            description="Online sports news site created for practicing CSS Grid."
           />
-          <Meta
-            avatar={
-              <Avatar
-                src={reduxImg}
-                style={{ position: "relative", bottom: "30px", right: "48px" }}
-              />
-            }
-          />
+          <a target="_blank" href="https://kterry1.github.io/NewsGrid/"><i class="fas fa-desktop"></i></a>
         </Card>
       </div>
     </div>

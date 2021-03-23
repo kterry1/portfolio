@@ -25,7 +25,7 @@ const PortHome = () => {
           <h1 class="heading heading--stroke-shadow">Welcome to my portfolio!</h1>
           <div class="circle el relative-values" ><i class="fas fa-location-arrow"></i></div>
           <p>Feel free to browse, relax, and enjoy. Hey, maybe we will end up building something together!</p>
-          <i class="fab fa-linkedin"></i>
+          <a target="_blank" href="https://www.linkedin.com/in/kevin-terry-065019134/"><i class="fab fa-linkedin"></i></a>
         </div>
     )
 }

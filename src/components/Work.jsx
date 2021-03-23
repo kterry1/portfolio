@@ -7,26 +7,13 @@ const Work = () => {
     return (
         <div className="work_container">
         <Timeline mode="alternate">
-    <Timeline.Item>Create a services site 2015-09-01</Timeline.Item>
-    <Timeline.Item>Solve initial network problems 2015-09-01</Timeline.Item>
-    <Timeline.Item>
-      Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-    </Timeline.Item>
-    <Timeline.Item>Network problems being solved 2015-09-01</Timeline.Item>
-    <Timeline.Item>Create a services site 2015-09-01</Timeline.Item>
-    <Timeline.Item>
-      Technical testing 2015-09-01
-    </Timeline.Item>
-    <Timeline.Item>Create a services site 2015-09-01</Timeline.Item>
-    <Timeline.Item>Solve initial network problems 2015-09-01</Timeline.Item>
-    <Timeline.Item>
-      Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-    </Timeline.Item>
-    <Timeline.Item>Network problems being solved 2015-09-01</Timeline.Item>
-    <Timeline.Item>Create a services site 2015-09-01</Timeline.Item>
-    <Timeline.Item>
-      Technical testing 2015-09-01
-    </Timeline.Item>
+    <Timeline.Item> Kustomer Senior Technical Support Engineer Oct 2020 - Current</Timeline.Item>
+    <Timeline.Item>Kustomer Technical Support Engineer Nov 2019 - Oct 2020</Timeline.Item>
+    <Timeline.Item>FightPandemics Volunteer Front End Engineer Jul 2020 - Aug 2020</Timeline.Item>
+    <Timeline.Item>Dollar Tree Support Services Analyst Feb 2019 – Sep 2019</Timeline.Item>
+    <Timeline.Item>Dollar Tree Support Services Associate Aug 2018 – Feb 2019</Timeline.Item>
+    <Timeline.Item>Lyft HQ Social Media Associate Feb 2017 - Aug 2018</Timeline.Item>
+    <Timeline.Item>Lyft HQ Critical Response Line Associate Jul 2016 - Feb 2017</Timeline.Item>
   </Timeline>
   </div>
     )

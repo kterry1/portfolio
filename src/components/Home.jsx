@@ -13,7 +13,7 @@ const Home = () => {
             strokeDashoffset: [anime.setDashoffset, 0],
             easing: 'easeInOutSine',
             duration: 800,
-            delay: (el, i) => { return i * 400 }
+            delay: (el, i) => { return i * 200 }
           });
     }, [])
 
