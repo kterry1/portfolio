@@ -158,6 +158,9 @@ body,
   .sidebar_container .sidebar_links {
     font-size: .75rem;
   }
+  .porthome_container {
+    padding: .1rem;
+  }
 }
 
 .sidebar_container h3 {
@@ -607,7 +610,7 @@ body,
 
   @media screen and (max-width:1030px){ 
     .heading {
-      font-size: 3rem;
+      font-size: 2.7rem;
       letter-spacing: 3px;
     }
     .porthome_container p {
