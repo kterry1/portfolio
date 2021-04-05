@@ -218,6 +218,7 @@ body,
   width: 100%;
   grid-template-areas: "card_1 card_2 card_3";
   justify-content: center;
+  justify-items: center;
 }
 
 .projects .cards:nth-of-type(1) {
