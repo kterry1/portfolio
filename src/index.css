@@ -135,6 +135,17 @@ body,
   }
 }
 @media screen and (max-width:700px){ 
+  .name_svg {
+    width: 21rem;
+  }
+  .name_line {
+    bottom: 7rem !important;
+  }
+
+  .enter_btn {
+    right: 30%;
+  }
+
   .sidebar_container > .initials {
     font-size: 3rem;
     border-radius: 10px;
