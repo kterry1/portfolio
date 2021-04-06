@@ -78,7 +78,7 @@ const Projects = () => {
           <Meta
             avatar={<Avatar style={{backgroundColor: "white"}} src={basicsImg} />}
             title="News Grid"
-            description="Online sports news site created for practicing CSS Grid."
+            description="Online sports news site."
           />
           <a target="_blank" href="https://kterry1.github.io/NewsGrid/"><i class="fas fa-desktop"></i></a>
         </Card>
