@@ -62,7 +62,7 @@ body,
 }
 
 .enter_btn {
-  animation: fadeIn 5s linear 5s forwards;
+  animation: fadeIn 2s linear 2s forwards;
 }
 
 @keyframes fadeIn {
